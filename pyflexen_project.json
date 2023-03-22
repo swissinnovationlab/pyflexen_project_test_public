@@ -1,1 +1,59 @@
-{"uid": "8df5f691df4a", "name": "8df5f691df4a", "active": true, "flows": [{"uid": "d75a9e195780", "name": "test", "nodes": [{"key": "1", "class": "pyflexen_engine.library.core.events.event_emitter_proxy_on_start", "params": {}, "default_in": {}, "default_out": {}, "size": {"x": 192, "y": 56}, "position": {"x": 185.0, "y": 219.0}}, {"key": "2", "class": "pyflexen_engine.library.debug.debug.function_print_any", "params": {"level": "INFO"}, "default_in": {"prefix": "Bok"}, "default_out": {}, "size": {"x": 192, "y": 152}, "position": {"x": 440.0, "y": 216.0}}], "links": [{"from_key": "1", "from_out": "on_start", "to_key": "2", "to_in": "run"}], "signals": [], "variables": []}], "signals": [], "extensions": []}
+{
+  "active": true,
+  "extensions": [],
+  "flows": [
+    {
+      "links": [
+        {
+          "from_key": "1",
+          "from_out": "on_start",
+          "to_in": "run",
+          "to_key": "2"
+        }
+      ],
+      "name": "test",
+      "nodes": [
+        {
+          "class": "pyflexen_engine.library.core.events.event_emitter_proxy_on_start",
+          "default_in": {},
+          "default_out": {},
+          "key": "1",
+          "params": {},
+          "position": {
+            "x": 185.0,
+            "y": 219.0
+          },
+          "size": {
+            "x": 192,
+            "y": 56
+          }
+        },
+        {
+          "class": "pyflexen_engine.library.debug.debug.function_print_any",
+          "default_in": {
+            "prefix": "Bok"
+          },
+          "default_out": {},
+          "key": "2",
+          "params": {
+            "level": "INFO"
+          },
+          "position": {
+            "x": 480.0,
+            "y": 216.0
+          },
+          "size": {
+            "x": 192,
+            "y": 152
+          }
+        }
+      ],
+      "signals": [],
+      "uid": "d75a9e195780",
+      "variables": []
+    }
+  ],
+  "name": "8df5f691df4a",
+  "signals": [],
+  "uid": "8df5f691df4a"
+}
