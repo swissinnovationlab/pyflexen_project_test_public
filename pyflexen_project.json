@@ -9,6 +9,12 @@
           "from_out": "on_start",
           "to_in": "run",
           "to_key": "2"
+        },
+        {
+          "from_key": "3",
+          "from_out": "value",
+          "to_in": "value",
+          "to_key": "2"
         }
       ],
       "name": "test",
@@ -20,8 +26,8 @@
           "key": "1",
           "params": {},
           "position": {
-            "x": 185.0,
-            "y": 219.0
+            "x": 160.0,
+            "y": 240.0
           },
           "size": {
             "x": 192,
@@ -30,21 +36,37 @@
         },
         {
           "class": "pyflexen_engine.library.debug.debug.function_print_any",
-          "default_in": {
-            "prefix": "Bok"
-          },
+          "default_in": {},
           "default_out": {},
           "key": "2",
           "params": {
             "level": "INFO"
           },
           "position": {
-            "x": 480.0,
-            "y": 216.0
+            "x": 400.0,
+            "y": 240.0
           },
           "size": {
             "x": 192,
             "y": 152
+          }
+        },
+        {
+          "class": "pyflexen_engine.library.core.values.operation_get_constant",
+          "default_in": {},
+          "default_out": {},
+          "key": "3",
+          "params": {
+            "type": "STRING",
+            "value": "Hello world!"
+          },
+          "position": {
+            "x": 160.0,
+            "y": 320.0
+          },
+          "size": {
+            "x": 192,
+            "y": 104
           }
         }
       ],
